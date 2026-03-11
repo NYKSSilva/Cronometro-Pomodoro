@@ -7,15 +7,16 @@
 
 .menuLink{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    gap: 0.4rem;
-    font-size: 4.2rem;
     text-decoration: none;
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+    border-radius: 0.8rem;
     transition: all 0.1s ease-in-out;
+    padding: 1.2rem;
+
 }
 
 .menuLink:hover{
@@ -23,6 +24,6 @@
 }
 
 .menuLink svg{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
 }
