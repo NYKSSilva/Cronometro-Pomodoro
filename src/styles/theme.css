@@ -1,5 +1,4 @@
 :root {
---primary: pink;
 --gray-100: #e6e9f0;
 --gray-200: #cdd3e1;
 --gray-300: #aab3cc;
@@ -10,7 +9,7 @@
 --gray-800:#181f2e;
 --gray-900: #0a0f1a;
 --primay-light: #4de7b7;
---primay: #0da170;
+--primary: #0da170;
 --primary-dark: #065f46;
 --link-color: #10b981;
 --link-hover: #0b8a60;
@@ -25,7 +24,7 @@
 --text-over-warning: #0a0f1a;
 --text-over-error: #e6e9f0;
 --text-over-info: #0a0f1a;
---text-defalut: #e6e9f0;
+--text-default: #e6e9f0;
 --text-muted: #aab3cc;
 --disabled: #555f7d;
 --text-disabled: #aab3cc;
