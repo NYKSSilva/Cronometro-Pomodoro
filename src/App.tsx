@@ -5,15 +5,24 @@ import { Container } from './components/container'
 import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { CountDown } from './components/CountDown'
-// import {Formulario} from './components/Formulario'
 import { Cycles } from './components/Cycles'
 import { DefaultInput } from './components/DefaultInput';
 import { DefaultButton } from './components/DefaultButton';
 import { CirclePlay, CircleStop } from 'lucide-react';
+import {Footer} from './components/Footer'
+import { useState } from 'react';
 
 export function App() {
+const [numero, setNumero] = useState(0);
+  function handleClick(){
+    setNumero(prevState => prevState +1);
+  }
   return (
     <>
+    <Heading>
+      Número: <span id='numero'>{numero}</span>
+    </Heading>
+    <button onClick={handleClick}>Aumentar Número</button>
       <Container>
         <Logo />
       </Container>
@@ -25,19 +34,14 @@ export function App() {
       <Container>
         <CountDown />
       </Container>
-
-      {/* <Container>
-       <Formulario/>
-      </Container> */}
-
       <Container>
         <form className="form" action="">
-          <div>
+          {/* <div>
             <label htmlFor=""></label>
             <input id="menuInput" type="text" placeholder='Digite algo' />
-          </div>
+          </div> */}
           <div className="formRow">
-            <DefaultInput labelText='' id='menuInput' type='text' placeholder='Digite sua Task' />
+            <DefaultInput labelText={numero} id='menuInput' type='text' placeholder='Digite sua Task' />
           </div>
           <div className='formRow'>
             linha verde
@@ -45,18 +49,15 @@ export function App() {
           <div className='formRow'>
             <Cycles />
           </div>
-         <DefaultButton icon= {<CirclePlay/>}  color = 'red'/> 
-         <DefaultButton icon= {<CircleStop/>}  color = 'green'/>
+         <DefaultButton icon= {<CirclePlay/>}  color = 'green'/> 
+         <DefaultButton icon= {<CircleStop/>}  color = 'red'/>
         </form>
       </Container>
 
-      <Container>
-        <Heading>Logo</Heading>
+     <Container>
+      <Footer/>
       </Container>
-
-      <Container>
-        <Heading>Menu</Heading>
-      </Container>
+      
     </>
   )
 }
@@ -75,4 +76,3 @@ export function App() {
 
 
 
-//o return nesse tipo de programação necessia de uma div "vazia" ("<> </>") para fazer todo o html dentro dela

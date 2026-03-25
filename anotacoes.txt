@@ -1,3 +1,4 @@
+   //o return nesse tipo de programação necessia de uma div "vazia" ("<> </>") para fazer todo o html dentro dela
    // & - Intersection Type, o componente aceita:
     // propriedades obrigatórias (id e labelText)
     // TODAS as propriedades padrão que um elemento <input> nativo HTML aceita

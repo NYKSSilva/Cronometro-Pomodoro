@@ -10,10 +10,8 @@ export function DefaultInput({id,type, labelText,placeholder,...rest
 }: DefaultInputProps){
     return(
     <>
-        <div className= {styles.teste}> 
             <label htmlFor = {id}> {labelText} </label>
             <input className  = {styles.input} id = {id} type = {type} placeholder={placeholder} {...rest}/>
-        </div>
     </>
     )  
 }
