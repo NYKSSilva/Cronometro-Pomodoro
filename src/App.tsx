@@ -41,7 +41,7 @@ const [numero, setNumero] = useState(0);
             <input id="menuInput" type="text" placeholder='Digite algo' />
           </div> */}
           <div className="formRow">
-            <DefaultInput labelText={numero} id='menuInput' type='text' placeholder='Digite sua Task' />
+            <DefaultInput labelText={`${numero}`} id='menuInput' type='text' placeholder='Digite sua Task' />
           </div>
           <div className='formRow'>
             linha verde
