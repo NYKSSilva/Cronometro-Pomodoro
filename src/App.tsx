@@ -11,6 +11,7 @@ import { DefaultButton } from './components/DefaultButton';
 import { CirclePlay, CircleStop } from 'lucide-react';
 import {Footer} from './components/Footer'
 import { useState } from 'react';
+import {MainTemplete} from './templates/MainTempletes';
 
 export function App() {
 const [numero, setNumero] = useState(0);
@@ -20,17 +21,13 @@ const [numero, setNumero] = useState(0);
   return (
     <>
     <Heading>
+      <MainTemplete> ola do main Template</MainTemplete>
+    </Heading>
+    <Heading>
       Número: <span id='numero'>{numero}</span>
     </Heading>
     <button onClick={handleClick}>Aumentar Número</button>
-      <Container>
-        <Logo />
-      </Container>
-
-      <Container>
-        <Menu />
-      </Container>
-
+      
       <Container>
         <CountDown />
       </Container>
@@ -52,10 +49,6 @@ const [numero, setNumero] = useState(0);
          <DefaultButton icon= {<CirclePlay/>}  color = 'green'/> 
          <DefaultButton icon= {<CircleStop/>}  color = 'red'/>
         </form>
-      </Container>
-
-     <Container>
-      <Footer/>
       </Container>
       
     </>
