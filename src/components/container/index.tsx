@@ -13,3 +13,9 @@ export function Container ({children}: ContainerProps){
     )
 
 }
+// type ContainerProps = {
+//     children: React.ReactNode;
+// }
+
+// export function Container ({children}: ContainerProps){
+//     return(
