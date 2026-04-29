@@ -1,5 +1,5 @@
-   //o return nesse tipo de programação necessia de uma div "vazia" ("<> </>") para fazer todo o html dentro dela
-   // & - Intersection Type, o componente aceita:
+    //o return nesse tipo de programação necessia de uma div "vazia" ("<> </>") para fazer todo o html dentro dela
+    // & - Intersection Type, o componente aceita:
     // propriedades obrigatórias (id e labelText)
     // TODAS as propriedades padrão que um elemento <input> nativo HTML aceita
     // (value , on Change, disabel, placeholder, step, etc.)
@@ -12,3 +12,8 @@
     // dentro  de um objeto de rest no elemento <input> 
     // 
     //
+    //                                    CHILDREN
+    //o children é utilizado no codigo para poder atribuir algo ao componente quando chama-lo,  como por exemplo:
+    // dentro da pasta app "<Exemplo>Final</Exemplo>"se o componente tiver children dentro dele a palavra que foi
+    // escrita no meio do componente qunado chamado aparece dentro do componente. Isso deixa o 
+    //componente flexivel para que consiga utilizar o mesmo componete para coisas diferente que usam a mesma base
